@@ -13,7 +13,7 @@ window.onload = () => {
 
 }
 function listen() {
-  const url = '../listen/day_';
+  const url = '../../listen/day_';
   var div = document.querySelector('.list');
   var index = 1;
   for (var i = 1; i <= 30; i++) {
