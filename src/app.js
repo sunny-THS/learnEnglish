@@ -17,12 +17,12 @@ function listen() {
   var div = document.querySelector('.list');
   var index = 1;
   for (var i = 1; i <= 30; i++) {
-    window.fetch(`${url}${i}/music.mp4`)
+    window.fetch(`${url}${i}/music.mp3`)
       .then((res) => {
         if(res.ok) {
           let p = document.createElement('p');
           let content_ = `Day ${index}`;
-          let music = `${url}${index}/music.mp4`;
+          let music = `${url}${index}/music.mp3`;
           p.innerText = content_;
           p.classList = 'days';
           p.addEventListener('click', function(e) {
