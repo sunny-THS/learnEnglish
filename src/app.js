@@ -13,11 +13,11 @@ window.onload = () => {
 
 }
 function listen() {
-  const url = 'https://github.com/sunny-THS/learnEnglish/tree/master/listen/day_';
+  const url = '../listen/day_';
   var div = document.querySelector('.list');
   var index = 1;
   for (var i = 1; i <= 30; i++) {
-    window.fetch(`${url}${i}`)
+    window.fetch(`${url}${i}/music.mp3`)
       .then((res) => {
         if(res.ok) {
           let p = document.createElement('p');
