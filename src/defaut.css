@@ -24,29 +24,34 @@ body {
 }
 .content {
   width: 60%;
-  display: -webkit-flex;
-  /* Safari */
-  -webkit-justify-content: space-between;
-  /* Safari 6.1+ */
   display: flex;
-  justify-content: space-between;
 }
-#back, #play, #next {
+#play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 150px;
   width: 150px;
   font-size: 1em;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  display: flex;
   color: #f00;
   cursor: pointer;
   transition: all .5s ease-out;
 }
 
-#play:hover, #back:hover, #next:hover {
+#play:hover {
   color: #fff;
   text-shadow: 3px 5px 2px rgb(255, 0, 0), 6px 8px 2px rgb(255, 255, 255);
+}
+.list {
+  color: #f00;
+  font-size: 20px;
+}
+.list .days {
+  cursor: pointer;
+}
+.list .days:hover {
+  color:  #fff;
 }
 
 @media only screen and (min-width: 570px) and (max-width: 770px) {
