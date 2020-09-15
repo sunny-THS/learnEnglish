@@ -17,16 +17,16 @@ function listen() {
   var div = document.querySelector('.list');
   var index = 1;
   for (var i = 1; i <= 30; i++) {
-    window.fetch(`${url}${i}/music.mp4`)
+    let url_music = `${url}${index}/music.mp4`;
+    window.fetch(url_music)
       .then((res) => {
         if(res.ok) {
           let p = document.createElement('p');
           let content_ = `Day ${index}`;
-          let music = `${url}${index}/music.mp4`;
           p.innerText = content_;
           p.classList = 'days';
           p.addEventListener('click', function(e) {
-            processMusic(music, content_);
+            processMusic(url_music, content_);
           });
           div.appendChild(p);
           index++;
