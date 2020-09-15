@@ -13,7 +13,7 @@ window.onload = () => {
 
 }
 function listen() {
-  const url = '../listen/day_';
+  const url = 'https://github.com/sunny-THS/learnEnglish/tree/master/listen/day_';
   var div = document.querySelector('.list');
   var index = 1;
   for (var i = 1; i <= 30; i++) {
