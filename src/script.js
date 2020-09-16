@@ -12,7 +12,7 @@ audio.addEventListener('timeupdate', function() {
 });
 
 function processMusic(music, name) {
-  document.getElementById('play').innerText = '||';
+  document.getElementById('play').innerText = "║";
   playMusic(music);
   nameMusic(name);
 }
